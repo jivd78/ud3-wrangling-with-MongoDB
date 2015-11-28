@@ -32,6 +32,13 @@ this function cleans up post code issues:
         translated_str = translated_str.replace(" ","")    
         return translated_str
 
+This query let us analyse the final result of postcode cleaned up:
+
+    postcodes_SP = SaoPaulo.find({"address:postcode": {"$exists":1}},
+                                                      {"_id":0, "address:postcode":1})
+    for a in postcodes_SP:
+      print "post codes: ", a   
+    
 
 
 
