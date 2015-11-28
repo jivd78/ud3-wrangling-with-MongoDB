@@ -19,10 +19,8 @@ Another way to locate an establishment is with its postal code. This attribute i
 ####1.3 Street References
 Sao Paulo language is Portuguese and gramatically speaking the street type is place at the beggining of any string. RE where compiled to match and search possible cases of Portuguese Streets.
 this function cleans up post code issues:
-
-
-
 '''
+
 def post_code_treatment(postcode_value):
     pv = postcode_value
     translated_str = pv.replace("-","")
