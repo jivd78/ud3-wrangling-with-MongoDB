@@ -16,3 +16,15 @@ Moreover, this addresses brings 1974 empty adresses all from way type documents,
 ####1.2 Non Consistent Postcodes
 Another way to locate an establishment is with its postal code. This attribute is preferred over an address itself, since, in theory, its uniformity is better than other address atributes uniformity, like streets, etc. Unfortunately, Sao Paulo post codes are formed by 8 digits, separeted or not by a hifen at fifth digit. Since this digit is correct, but not always produced, we decided to clean all postcodes, only remaining numeric characters.
 
+####1.3 Street References
+Sao Paulo language is Portuguese and gramatically speaking the street type is place at the beggining of any string. RE where compiled to match and search possible cases of Portuguese Streets.
+
+
+
+
+
+
+
+
+
+
