@@ -66,33 +66,33 @@ sao-paulo_brazil.osm.json....439 Mb
 ####2.2 Number of Way Types:
     
     SP_ways = SaoPaulo.find({"type":"way"}).count()
-    XXXXXX
+    228558
 
 ####2.3 Number of Node Types:
 
     SP_nodes = SaoPaulo.find({"type":"node"}).count()
-    XXXXXX
+    1663935
 
 ####2.4 Number of Unique Users:
     
     SP_uusers = len(SaoPaulo.distinct("created.user"))
-    xxxxxx
+    1603
 ####2.5 Top 10 Contributor Users:
     
     topSP = SaoPaulo.aggregate([{"$group":{"_id":"$created.user",
                                           "count": {"$sum":1}}},
                                {"$sort":{"count": -1}},
                                {"$limit": 10}])
-    
-    xxx
-    xxx
-    xxx
-    xxx
-    xxx
-    xxx
-    xxx
-    xxx
-    xxx
+    [{u'count': 223228, u'_id': u'cxs'}
+     {u'count': 134219, u'_id': u'MCPicoli'}
+     {u'count': 109540, u'_id': u'AjBelnuovo'}
+     {u'count': 106089, u'_id': u'ygorre'}
+     {u'count': 85779, u'_id': u'Rub21'}
+     {u'count': 68323, u'_id': u'Roberto Costa'}
+     {u'count': 66989, u'_id': u'josedeonesio'}
+     {u'count': 63604, u'_id': u'tenentebirula'}
+     {u'count': 57345, u'_id': u'chdr'}
+     {u'count': 41401, u'_id': u'naoliv'}]
 ####2.5 Only One Contribution Contributors:
 
     oneSP = SaoPaulo.aggregate([{"$group":{"_id":"$created.user",
@@ -104,3 +104,5 @@ sao-paulo_brazil.osm.json....439 Mb
     XXXXXX
 
 ###3. Additional Ideas:
+There is no point of analysing data if this is not enough to get minimum insights.
+For instance in a city with at least a pair of million of stablishments, must be a way to improve significant data input beyond ways.
