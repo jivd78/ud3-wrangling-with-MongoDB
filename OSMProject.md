@@ -111,8 +111,19 @@ It is very relevantt that 50% of all documents were input by only 10 users. Furt
 Since Data driven apps and web development have exploited ih the last few years, and geographical positionament is common data but at some cost. It is important to hightlight for developers to point to free sources of this GP APIs. Open Street Map is a FREE source of this kind of data. If GP apps prefer Open Street Maps over Google Maps, data size and relevance could lead to a free cost revolution in this context.
 
 ####3.2. Tag Similarities, Repetitive Information, Related Information
-There are several tags that could display related information, sometimes repetitive. In Sao Paulo database tags like name and street are commonly the same. the name tags has been missused. With the query of additional exploration can be seen this data feature.  
-
+There are several tags that could display related information, sometimes repetitive. In Sao Paulo database tags like name and street are commonly the same. the name tags has been missused. With the query of additional exploration can be seen this data feature. 
+This excerpt for name tags displays name as streets.
+    
+    {u'type': u'way', u'name': u'Rua Francisco Jos\xe9 da Silva'}
+    {u'type': u'way', u'name': u'Rua Jos\xe9 da Silva Ribeiro'}
+    {u'type': u'way', u'name': u'Rua Aureliano Guimar\xe3es'}
+    {u'type': u'way', u'name': u'Rua Engenheiro Ant\xf4nio Jovino'}
+    {u'type': u'way', u'name': u'Rua Cidade do Rio Pardo'}
+    {u'type': u'way', u'name': u'Rua N\xe9lson Gama de Oliveira'}
+    {u'type': u'way', u'name': u'Rua Arnaldo Olinto Bastos Filho'}
+    {u'type': u'way', u'name': u'Rua Jos\xe9 Gon\xe7alves'}
+    {u'type': u'way', u'name': u'Rua Jos\xe9 de Oliveira Coelho'}
+    {u'type': u'way', u'name': u'Rua Francisco Pessoa'}
 ###4. Additional Exploration
 With this query is possible to analize the most insightful tags.
     
