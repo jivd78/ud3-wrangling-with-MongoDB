@@ -108,7 +108,7 @@ sao-paulo_brazil.osm.json....439 Mb
 There is no point of analysing data if this is not enough to get minimum insights.
 For instance in a city with at least a pair of million of stablishments, must exists a way to improve significant data input beyond way type data.
 It is very relevantt that 50% of all documents were input by only 10 users. Furthermore, 311 out of 1603 users only input a single document, nothing more.
-Since Data driven apps and web development are exploited ih the last few years, and geographical positionament is common data but at some cost. It is important to hightlight for developers to point to free sources of this GP APIs. Open Street Map is a FREE source of this kind of data. If GP apps prefer Open Street Maps over Google Maps, data size and relevance could lead to a free cost revolution in this context.
+Since Data driven apps and web development have exploited ih the last few years, and geographical positionament is common data but at some cost. It is important to hightlight for developers to point to free sources of this GP APIs. Open Street Map is a FREE source of this kind of data. If GP apps prefer Open Street Maps over Google Maps, data size and relevance could lead to a free cost revolution in this context.
 
 ####3.2. Tag Similarities, Repetitive Information, Related Information
 There are several tags that could display related information, sometimes repetitive. Finding tags with related information or Standardizing Tags Keys may mark the difference
