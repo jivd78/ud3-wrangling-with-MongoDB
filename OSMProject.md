@@ -124,6 +124,8 @@ This excerpt for name tags displays name as streets.
     {u'type': u'way', u'name': u'Rua Jos\xe9 Gon\xe7alves'}
     {u'type': u'way', u'name': u'Rua Jos\xe9 de Oliveira Coelho'}
     {u'type': u'way', u'name': u'Rua Francisco Pessoa'}
+
+Web tag and URL tag are another exampple of repetitive information. Additionally, genre tag could be mixed with amenity tag.
 ###4. Additional Exploration
 With this query is possible to analize the most insightful tags.
     
@@ -158,5 +160,26 @@ For  Amenities: Fuel Stations are the most tagged:
     {u'count': 326, u'_id': u'pharmacy'}
     {u'count': 317, u'_id': u'fast_food'}
     {u'count': 285, u'_id': u'hospital'}
-For 
-   
+For Shop tags we have:
+    
+    {u'count': 1888947, u'_id': None}
+    {u'count': 697, u'_id': u'supermarket'}
+    {u'count': 618, u'_id': u'yes'}
+    {u'count': 356, u'_id': u'bakery'}
+    {u'count': 208, u'_id': u'car'}
+    {u'count': 172, u'_id': u'car_repair'}
+    {u'count': 167, u'_id': u'clothes'}
+    {u'count': 140, u'_id': u'convenience'}
+    {u'count': 134, u'_id': u'mall'}
+    {u'count': 104, u'_id': u'hardware'}
+For Cuisine type:
+
+    {u'count': 160, u'_id': u'regional'}
+    {u'count': 113, u'_id': u'burger'}
+    {u'count': 90, u'_id': u'pizza'}
+    {u'count': 55, u'_id': u'japanese'}
+    {u'count': 26, u'_id': u'sandwich'}
+    {u'count': 22, u'_id': u'italian'}
+    {u'count': 20, u'_id': u'coffee_shop'}
+    {u'count': 10, u'_id': u'steak_house'}
+    {u'count': 9, u'_id': u'international'}
