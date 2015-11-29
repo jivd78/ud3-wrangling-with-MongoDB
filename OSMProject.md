@@ -21,7 +21,7 @@ The next query show us the lack of useful addresses.
                                            {"$group":{"_id":"$type",
                                                       "count":{"$sum":1}}},
                                            {"$sort": {"count":-1}}])
-And this one show us the metropolitan cities within the downloaded range:
+And this one show us the metropolitan cities within the downloaded range diminishing even more our cleaned database:
 
     cities_adr_SP = SaoPaulo.aggregate([{"$match":{"address.city":{"$exists":1}}},
                                         {"$group":{"_id":"$address.city",
