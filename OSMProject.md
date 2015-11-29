@@ -111,4 +111,29 @@ It is very relevantt that 50% of all documents were input by only 10 users. Furt
 Since Data driven apps and web development have exploited ih the last few years, and geographical positionament is common data but at some cost. It is important to hightlight for developers to point to free sources of this GP APIs. Open Street Map is a FREE source of this kind of data. If GP apps prefer Open Street Maps over Google Maps, data size and relevance could lead to a free cost revolution in this context.
 
 ####3.2. Tag Similarities, Repetitive Information, Related Information
-There are several tags that could display related information, sometimes repetitive. Finding tags with related information or Standardizing Tags Keys may mark the difference
+There are several tags that could display related information, sometimes repetitive. Finding tags with related information or Standardizing Tags Keys may cause
+
+###4. Additional Exploration
+With this query is possible to analize the most insightful tags.
+    
+    def query1(Main_list, collection):
+    #Usage block Tags:
+    for tag in Main_list:
+        cursor = collection.find({str(tag):{"$exists":1}},
+                                 {"_id":0, "type":1, str(tag):1})
+        for c in cursor:
+            print c
+        print " "
+        parts = ['$', tag]
+        string = ''.join(parts)
+        cursor1 = collection.aggregate([{"$group":{"_id":string,
+                                                   "count":{"$sum":1}}},
+                                        {"$sort": {"count":-1}},
+                                        {"$limit":10}])
+        for c1 in cursor1:
+            print c1
+        print " "
+
+This query yield some of the next results:
+
+   
