@@ -7,6 +7,8 @@ https://www.openstreetmap.org/relation/298285
 
 https://mapzen.com/data/metro-extracts . Once there look for Sao Paulo, Brazil
 
+Although I was born in Colombia, I am currently living in Sao Paulo, Brazil. Sao Paulo is one of the most populous Megacities in the world, thus I decided to analyse its data on OMS and verify that despite the fact is a huge citiy, its data is not that helpful to use on apps developments.
+
 ###1. Problems Encountered in the Map.
 ####1.1. Lack of Information Empty Addresses
 Sao Paulo Metropolitan Area is one of the so called Mega Cities around the world. With a estimated population over 20 million and considered the economic engine of Brazil, the 15702 addresses tags encountered are incompatible with its real magnitud.
