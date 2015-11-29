@@ -172,7 +172,7 @@ For Shop tags we have:
     {u'count': 140, u'_id': u'convenience'}
     {u'count': 134, u'_id': u'mall'}
     {u'count': 104, u'_id': u'hardware'}
-For Cuisine type:
+And for Cuisine type:
 
     {u'count': 160, u'_id': u'regional'}
     {u'count': 113, u'_id': u'burger'}
@@ -183,3 +183,9 @@ For Cuisine type:
     {u'count': 20, u'_id': u'coffee_shop'}
     {u'count': 10, u'_id': u'steak_house'}
     {u'count': 9, u'_id': u'international'}
+
+###5 Conclusion
+There are lot of value in geographical and localization data, even more if this is gathered toghether with extra data about the points tagged.
+Databases produced from this data could generate powerful insights and have economic potencial.
+All this is possible only if this data is highly populated. In the case this db lack enough information, for sure, any insight could lead to wrong conclusions or strategies, since data is not a representative sample of the entire population.
+Marketing Open Street Data capabilities for new geographical support apps would be part of the solution, offering as main feature its free platform.
