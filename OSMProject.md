@@ -34,7 +34,6 @@ Another way to locate an establishment is with its postal code. This attribute i
 Sao Paulo language is Portuguese and gramatically speaking the street type is place at the beggining of any string. RE where compiled to match and search possible cases of Portuguese Streets.
 this function cleans up post code issues:
 
-   
     def post_code_treatment(postcode_value):
         """
         This function substitues non alphanumeric characters ("."," " and "-" ) by no 
@@ -55,7 +54,9 @@ This query let us analyse the final result of postcode cleaned up:
 
 ###2. Data  Overview
 ####2.1 File Sizes:
+
 sao-paulo_brazil.osm.........360 Mb
+
 sao-paulo_brazil.osm.json....439 Mb
 
 ####2.1. Number of Documents:
