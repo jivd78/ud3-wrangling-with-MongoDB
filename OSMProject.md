@@ -52,11 +52,25 @@ This query let us analyse the final result of postcode cleaned up:
                                                       {"_id":0, "address:postcode":1})
     for a in postcodes_SP:
       print "post codes: ", a   
+
+###2. Data  Overview
+####2.1 File Sizes:
+sao-paulo_brazil.osm.........360 Mb
+sao-paulo_brazil.osm.json....439 Mb
+
+####2.1. Number of Documents:
     
+    SP_Count = SaoPaulo.find().count()
+    1892840
+####2.2 Number of Way Types:
+    
+    SP_ways = SaoPaulo.find({"type":"way"}).count()
+    XXXXXX
 
+####2.3 Number of Node Types:
 
-
-
+    SP_nodes = SaoPaulo.find({"type":"node"}).count()
+    XXXXXX
 
 
 
