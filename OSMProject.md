@@ -55,7 +55,7 @@ This query let us analyse the final result of postcode cleaned up:
 ###2. Data  Overview
 ####2.1 File Sizes:
 
-sao-paulo_brazil.osm.........360 Mb
+sao-paulo_brazil.osm...........360 Mb
 
 sao-paulo_brazil.osm.json....439 Mb
 
@@ -73,7 +73,34 @@ sao-paulo_brazil.osm.json....439 Mb
     SP_nodes = SaoPaulo.find({"type":"node"}).count()
     XXXXXX
 
+####2.4 Number of Unique Users:
+    
+    SP_uusers = len(SaoPaulo.distinct("created.user"))
+    xxxxxx
+####2.5 Top 10 Contributor Users:
+    
+    topSP = SaoPaulo.aggregate([{"$group":{"_id":"$created.user",
+                                          "count": {"$sum":1}}},
+                               {"$sort":{"count": -1}},
+                               {"$limit": 10}])
+    
+    xxx
+    xxx
+    xxx
+    xxx
+    xxx
+    xxx
+    xxx
+    xxx
+    xxx
+####2.5 Only One Contribution Contributors:
 
+    oneSP = SaoPaulo.aggregate([{"$group":{"_id":"$created.user",
+                                           "count": {"$sum":1}}},
+                                {"$group":{"_id":"$count",
+                                           "countcounts":{"$sum":1}}},
+                                {"$sort":{"_id":1}},
+                                {"$limit":1}])
+    XXXXXX
 
-
-
+###3. Additional Ideas:
