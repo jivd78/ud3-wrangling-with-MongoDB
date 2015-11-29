@@ -13,6 +13,7 @@ Sao Paulo Metropolitan Area is one of the so called Mega Cities around the world
 Moreover, this addresses brings 1974 empty adresses all from way type documents, whic leave us with only 13728 addresses. These addresses are from the entire metro area, i.e. not only from Sao Paulo itself, but from the other surrounding cities. 
 (Sao Paulo: 7516 addresses, Sao Bernardo: 1784, Outras Cidades: 1764, Without City: 2664).
 The next query show us the lack of useful addresses.
+
     non_addresses_SP = SaoPaulo.aggregate([{"$match":{"address.street":{"$exists":0},
                                                       "postal_code":{"$exists":0},
                                                       "address.postcode":{"$exists":0},
@@ -21,6 +22,7 @@ The next query show us the lack of useful addresses.
                                                       "count":{"$sum":1}}},
                                            {"$sort": {"count":-1}}])
 And this one show us the metropolitan cities within the downloaded range:
+
     cities_adr_SP = SaoPaulo.aggregate([{"$match":{"address.city":{"$exists":1}}},
                                         {"$group":{"_id":"$address.city",
                                                    "count_city":{"$sum":1}}},
